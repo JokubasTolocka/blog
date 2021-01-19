@@ -1,0 +1,26 @@
+@import '../base';
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: $secondary;
+}
+
+.logo {
+    margin: 0;
+    color: $brand;
+    font-family: $fontBrand;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.link {
+    padding: 0 16px;
+    color: $brand;
+    font-family: $fontBrand;
+    font-size: 16px;
+    text-decoration: none;
+}

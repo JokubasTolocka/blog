@@ -2,10 +2,10 @@ import * as React from "react";
 import "@fontsource/fraunces/600.css";
 import Layout from '../components/Layout';
 
-const IndexPage = () => {
+const TechnologyPage = () => {
   return (
-    <Layout></Layout>
+    <Layout/>
   )
 }
 
-export default IndexPage
+export default TechnologyPage
