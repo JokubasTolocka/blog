@@ -5,15 +5,47 @@ backend:
 media_folder: "images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "technology"
+    label: "Technology"
+    folder: "content/technology"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: slug
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Slug", name: 'slug', widget: 'string'}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: slug
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Slug", name: 'slug', widget: 'string'}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  
+  - name: "sports"
+    label: "Sports"
+    folder: "content/sports"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: slug
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Slug", name: 'slug', widget: 'string'}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
