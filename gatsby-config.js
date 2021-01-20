@@ -16,22 +16,22 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "markdown-pages",
-        path: `${__dirname}/content`,
-      },
-      __key: "pages",
-    },
-    `gatsby-transformer-remark`,
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: "./src/images/",
+    //   },
+    //   __key: "images",
+    // },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "markdown-pages",
+    //     path: `${__dirname}/content`,
+    //   },
+    //   __key: "pages",
+    // },
+    // `gatsby-transformer-remark`,
   ],
 };
