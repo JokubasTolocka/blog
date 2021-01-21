@@ -5,47 +5,128 @@ backend:
 media_folder: "images/uploads"
 
 collections:
-  - name: "technology"
+    - name: "technology"
     label: "Technology"
-    folder: "content/technology"
+    folder: "src/pages/technology"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     identifier_field: slug
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Slug", name: 'slug', widget: 'string'}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Template"
+        name: "template"
+        widget: "hidden"
+        default: "page"
 
-  - name: "news"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "blog"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Technology", "News", "Sports"]
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+    - name: "news"
     label: "News"
-    folder: "content/news"
+    folder: "src/pages/news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     identifier_field: slug
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Slug", name: 'slug', widget: 'string'}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-  
+      - label: "Template"
+        name: "template"
+        widget: "hidden"
+        default: "page"
+
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "blog"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Technology", "News", "Sports"]
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
   - name: "sports"
     label: "Sports"
-    folder: "content/sports"
+    folder: "src/pages/sports"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     identifier_field: slug
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Technology", "News", "Sports"]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Slug", name: 'slug', widget: 'string'}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Template"
+        name: "template"
+        widget: "hidden"
+        default: "page"
+
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "blog"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Technology", "News", "Sports"]
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"

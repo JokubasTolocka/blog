@@ -1,0 +1,45 @@
+@import "../base.scss";
+
+.root {
+  margin-top: 64px;
+  background-color: $grey;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1192px;
+  width: 100%;
+
+  @include tabletDown {
+    padding: 0 18px;
+  }
+
+  @include phone {
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-size: 400;
+  font-family: $fontBrand;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+  grid-template-rows: 1fr;
+
+  @include tabletDown {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 64px;
+    grid-template-rows: 1fr;
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../base.scss";
+
+.root {
+  max-width: 800px;
+  height: 150px;
+  display: flex;
+  margin-bottom: 48px;
+  color: $brand;
+
+  @include phone {
+    height: 120px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+
+  @include phone {
+    font-size: 18px;
+  }
+}
+
+.image {
+  object-fit: cover;
+  width: 200px;
+}
+
+.postInformation {
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include phone {
+    margin-right: 16px;
+  }
+}
+
+.categoryName {
+  color: $complementary;
+}
+
+.description {
+  margin-top: 8px;
+  color: rgba(117, 117, 117, 1);
+
+  @include phone {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../base";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 18px 0 18px;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin: 24px 0 48px 0;
+}
+
+.headerText {
+  color: $brand;
+  font-family: $fontBrand;
+  font-size: 65px;
+  margin: 0;
+
+  @include phone {
+    font-size: 48px;
+  }
+}
+
+.svg {
+  height: 200px;
+  width: auto;
+
+  @include phone {
+    display: none;
+  }
+}
+
+.svg2 {
+  height: 100%;
+  margin-left: 64px;
+  max-height: 270px;
+
+  @include phone {
+    display: none;
+  }
+}

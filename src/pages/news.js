@@ -2,17 +2,17 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import ArticleBlock from "../components/ArticleBlock";
-import SVG from "../assets/technology.svg";
-import SVG2 from "../assets/technology2.svg";
+import SVG from "../assets/news.svg";
+import SVG2 from "../assets/news2.svg";
 import styles from "./technology.module.scss";
 
-const TechnologyPage = () => {
+const NewsPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
-        filter: { frontmatter: { category: { eq: "Technology" } } }
+        filter: { frontmatter: { category: { eq: "News" } } }
       ) {
         nodes {
           fields {
@@ -45,7 +45,7 @@ const TechnologyPage = () => {
             <div className={styles.header}>
               <div>
                 <SVG className={styles.svg} />
-                <h1 className={styles.headerText}>Technology</h1>
+                <h1 className={styles.headerText}>News</h1>
               </div>
               <SVG2 className={styles.svg2} />
             </div>
@@ -63,4 +63,4 @@ const TechnologyPage = () => {
   );
 };
 
-export default TechnologyPage;
+export default NewsPage;
