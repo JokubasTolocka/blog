@@ -5,13 +5,13 @@ backend:
 media_folder: "images/uploads"
 
 collections:
-    - name: "technology"
-      label: "Technology"
-      folder: "src/pages/technology"
-      create: true
-      slug: "{{slug}}"
-      identifier_field: slug
-      fields:
+  - name: "technology"
+    label: "Technology"
+    folder: "src/pages/technology"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
       - label: "Template"
         name: "template"
         widget: "hidden"
@@ -47,13 +47,13 @@ collections:
         name: "date"
         widget: "datetime"
 
-    - name: "news"
-      label: "News"
-      folder: "src/pages/news"
-      create: true
-      slug: "{{slug}}"
-      identifier_field: slug
-      fields:
+  - name: "news"
+    label: "News"
+    folder: "src/pages/news"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
       - label: "Template"
         name: "template"
         widget: "hidden"
