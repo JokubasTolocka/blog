@@ -37,3 +37,9 @@ body {
     @content;
   }
 }
+
+@mixin phoneTiny {
+  @media only screen and (max-width: 495px) {
+    @content;
+  }
+}

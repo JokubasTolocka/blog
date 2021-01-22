@@ -1,10 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import ArticleBlock from "../components/ArticleBlock";
-import SVG from "../assets/news.svg";
+import SVG1 from "../assets/news.svg";
 import SVG2 from "../assets/news2.svg";
-import styles from "./technology.module.scss";
+import Page from "../components/Page";
 
 const NewsPage = () => {
   const data = useStaticQuery(graphql`
@@ -40,24 +39,13 @@ const NewsPage = () => {
   return (
     <>
       <Layout>
-        <div className={styles.root}>
-          <div className={styles.content}>
-            <div className={styles.header}>
-              <div>
-                <SVG className={styles.svg} />
-                <h1 className={styles.headerText}>News</h1>
-              </div>
-              <SVG2 className={styles.svg2} />
-            </div>
-            {articles.map((article, index) => (
-              <ArticleBlock
-                article={article}
-                key={index}
-                path={paths[index].fields.path}
-              />
-            ))}
-          </div>
-        </div>
+        <Page
+          category="News"
+          articles={articles}
+          paths={paths}
+          SVG1={SVG1}
+          SVG2={SVG2}
+        />
       </Layout>
     </>
   );

@@ -1,0 +1,52 @@
+@import "../base.scss";
+
+.header {
+  max-height: 300px;
+  display: flex;
+  margin: 24px 18px 0 18px;
+  position: relative;
+}
+
+.headerTextBlock {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.svg {
+  max-height: 260px;
+  max-width: 300px;
+  margin: auto 24px 0 auto;
+  width: fit-content;
+
+  @include phone {
+    font-size: 24px;
+    max-height: 200px;
+  }
+}
+
+.headerMainText {
+  font-family: $fontBrand;
+  font-size: 40px;
+  color: $brand;
+  margin-bottom: 8px;
+
+  @include phone {
+    font-size: 32px;
+  }
+}
+
+.headerText {
+  font-size: 24px;
+  color: $brand;
+  font-family: $fontBrand;
+  font-weight: 400;
+  margin-bottom: 44px;
+
+  @include phone {
+    font-size: 18px;
+  }
+}

@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Constants from "../constants";
 import ArticleFooter from "../components/ArticleFooter";
-// import ShareButtons from "../components/ShareBlock";
+import ShareButtons from "../components/ShareBlock";
 import styles from "./blog.module.scss";
 
 export default function Template({ data }) {
@@ -23,6 +23,7 @@ export default function Template({ data }) {
             <span className={styles.date}>
               {timeToRead} min read <span className={styles.dot}>·</span>
               {frontmatter.date}
+              <ShareButtons frontmatter={frontmatter} />
             </span>
           </div>
           <img
@@ -36,7 +37,7 @@ export default function Template({ data }) {
           />
           <div className={styles.footer}>
             <span className={styles.date}>{frontmatter.date}</span>
-            {/* <ShareButtons frontmatter={frontmatter} /> */}
+            <ShareButtons frontmatter={frontmatter} />
           </div>
         </div>
       </div>

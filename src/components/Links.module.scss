@@ -1,0 +1,17 @@
+@import "../base.scss";
+
+.link {
+  padding: 0 16px;
+  color: $brand;
+  font-family: $fontBrand;
+  font-size: 16px;
+  text-decoration: none;
+
+  @include phone {
+    padding: 0 8px;
+  }
+}
+
+.active {
+  color: rgba($color: $brand, $alpha: 0.7);
+}

@@ -39,6 +39,8 @@
 
 .date {
   color: $midGrey;
+  display: flex;
+  align-items: center;
 
   @include phone {
     font-size: 14px;
@@ -47,11 +49,13 @@
 
 .category {
   color: $complementary;
+  display: flex;
+  align-items: center;
 }
 
 .thumbnail {
   width: 100%;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .dot {

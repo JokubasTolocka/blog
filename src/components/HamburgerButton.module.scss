@@ -1,0 +1,46 @@
+@import "../base.scss";
+
+.hamburgerButton {
+  display: none;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.hamburgerLine {
+  height: 2px;
+  background-color: $brand;
+  width: 22px;
+  margin: 3px 0;
+}
+
+.hamburgerLine {
+  display: block;
+  transform: rotate(0deg) translateX(0px);
+  transition-duration: 100ms;
+
+  .active & {
+    &:nth-child(1) {
+      transform: rotate(45deg) translateY(3px);
+      transition-duration: 100ms;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(-45deg) translateY(-3px);
+      transition-duration: 100ms;
+      margin-top: 0px;
+    }
+
+    &:nth-child(3) {
+      background-color: transparent;
+      transition-duration: 100ms;
+      margin-top: 0px;
+    }
+  }
+}

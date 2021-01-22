@@ -1,0 +1,56 @@
+@import "../base.scss";
+
+.root {
+  border-top: 1px solid $brand;
+  background-color: $grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 48px 0;
+}
+
+.content {
+  max-width: 1192px;
+  margin: 0 18px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+  grid-template-rows: 1fr;
+
+  @include tabletDown {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 64px;
+    grid-template-rows: 1fr;
+
+    a {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+}
+
+.newTitle {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-family: $fontBrand;
+  color: $brand;
+}

@@ -1,0 +1,66 @@
+@import "../base.scss";
+
+.root {
+  position: relative;
+}
+
+.shareButton {
+  padding-left: 12px;
+}
+
+.icon {
+  color: $complementary;
+  cursor: pointer;
+}
+
+.selectRoot {
+  position: absolute;
+  transform: translateY(-185px);
+
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $grey;
+  color: $brand;
+  border: 1px solid $brand;
+  padding: 8px 12px;
+}
+
+.selectRoot:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -11px;
+  margin: 0 0 0 auto;
+  width: 0;
+  height: 0;
+  border-top: 11px solid $grey;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
+
+.selectRoot::before {
+  content: "";
+  position: absolute;
+  border-top: 11px solid $brand;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  display: block;
+  right: 0;
+  bottom: -12px;
+  margin: 0 0 0 auto;
+  width: 0;
+  height: 0;
+}
+
+.selectItem {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectIcon {
+  width: 30px;
+  margin-right: 8px;
+}

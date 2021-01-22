@@ -1,48 +1,36 @@
-import React from "react";
-import classnames from "classnames";
+import React, { useState } from "react";
 import Link from "./Link";
 import styles from "./Nav.module.scss";
+import NavLinks from "./Links";
+import HamburgerButton from "./HamburgerButton";
 
 const Nav = () => {
-  const path = typeof window !== "undefined" ? window.location.pathname : "";
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className={styles.root}>
-      <div className={styles.content}>
-        <Link to="/" className={styles.logo}>
-          Blog
-        </Link>
-        <div>
-          <Link
-            to="/technology"
-            className={classnames(
-              styles.link,
-              path.startsWith("/technology") && styles.active
-            )}
-          >
-            Technology
-          </Link>
-          <Link
-            to="/news"
-            className={classnames(
-              styles.link,
-              path.startsWith("/news") && styles.active
-            )}
-          >
-            News
-          </Link>
-          <Link
-            to="/sports"
-            className={classnames(
-              styles.link,
-              path.startsWith("/sports") && styles.active
-            )}
-          >
-            Sports
-          </Link>
+    <div className={styles.root}>
+      {isMenuOpen && (
+        <div className={styles.menu}>
+          <NavLinks />
         </div>
-      </div>
-    </nav>
+      )}
+      <nav className={styles.nav}>
+        <div className={styles.content}>
+          <Link to="/" className={styles.logo}>
+            Blog
+          </Link>
+          <div>
+            <div className={styles.links}>
+              <NavLinks />
+            </div>
+            <HamburgerButton
+              active={isMenuOpen}
+              setIsMenuOpen={() => setIsMenuOpen((prev) => !prev)}
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
 

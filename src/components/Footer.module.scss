@@ -2,6 +2,37 @@
 
 .root {
   background-color: $brand;
-  height: 32px;
-  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+}
+
+.logo {
+  margin: 0;
+  font-family: $fontBrand;
+  font-weight: 600;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  max-width: 1192px;
+  margin: 0 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  padding: 0 16px;
+  color: white;
+  font-family: $fontBrand;
+  font-size: 16px;
+  text-decoration: none;
+
+  @include phone {
+    padding: 0 8px;
+  }
 }
