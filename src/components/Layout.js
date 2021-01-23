@@ -5,7 +5,7 @@ import styles from "./Layout.module.scss";
 
 const Layout = ({ children }) => (
   <div className={styles.root}>
-    <div>
+    <div className={styles.content}>
       <Nav />
       {children}
     </div>

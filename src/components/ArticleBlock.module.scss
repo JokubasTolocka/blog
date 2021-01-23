@@ -1,7 +1,7 @@
 @import "../base.scss";
 
 .root {
-  max-width: 800px;
+  width: 100%;
   height: 150px;
   display: flex;
   margin-bottom: 48px;
@@ -22,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
+
+  @include phone {
+    font-size: 13px;
+  }
 }
 
 .title {
@@ -62,13 +66,14 @@
 .description {
   margin-top: 8px;
   margin-bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   color: rgba(117, 117, 117, 1);
 
   @include phone {
     font-size: 14px;
-    overflow: hidden;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 }

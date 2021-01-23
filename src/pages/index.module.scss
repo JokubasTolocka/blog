@@ -12,18 +12,14 @@
   width: 100%;
 }
 
-.newBlock {
-  border-top: 1px solid $brand;
-  background-color: $grey;
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 12px 0;
-}
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
 
-.newTitle {
-  font-size: 24px;
-  font-family: $fontBrand;
-  color: $brand;
+  margin: 18px;
+
+  @include tabletDown {
+    grid-template-columns: 1fr;
+  }
 }

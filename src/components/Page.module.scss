@@ -16,6 +16,10 @@
   display: flex;
   width: 100%;
   margin: 24px 0 48px 0;
+
+  @include phone {
+    margin: 16px 0 24px 0;
+  }
 }
 
 .headerText {
@@ -25,7 +29,7 @@
   margin: 0;
 
   @include phone {
-    font-size: 48px;
+    font-size: 32px;
   }
 }
 

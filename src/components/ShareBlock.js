@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   Share,
   Facebook,
@@ -14,9 +14,23 @@ import {
 import styles from "./ShareBlock.module.scss";
 
 const ShareButtons = ({ frontmatter }) => {
+  const wrapperRef = useRef(null);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
   const title = `Read ${frontmatter.title} `;
   const url = typeof window !== "undefined" ? window.location.href : "";
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsSelectOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [wrapperRef]);
 
   const copyLink = async () => {
     await navigator.clipboard.writeText(url);
@@ -32,7 +46,7 @@ const ShareButtons = ({ frontmatter }) => {
         />
       </div>
       {isSelectOpen && (
-        <div className={styles.selectRoot}>
+        <div className={styles.selectRoot} ref={wrapperRef}>
           <TwitterShareButton
             url={url}
             title={title}
