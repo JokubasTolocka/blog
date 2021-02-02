@@ -1,0 +1,97 @@
+@import "../base.scss";
+
+.root {
+  z-index: 2;
+  position: fixed;
+  background-color: rgba($brand, 0.2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.modal {
+  z-index: 3;
+  margin: 15% 16px;
+  max-width: 660px;
+  background-color: white;
+  border: 1px solid $brand;
+  padding: 40px 32px;
+  color: $brand;
+
+  @include phoneTiny {
+    margin-top: 35%;
+  }
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: $fontBrand;
+  font-size: 20px;
+  margin: 0;
+}
+
+.text {
+  margin-top: 32px;
+  color: $midGrey;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.input {
+  border: 1px solid $brand;
+  font-size: 16px;
+  margin-right: 8px;
+  height: 40px;
+  padding: 0 16px;
+  width: 300px;
+
+  @include phone {
+    width: 200px;
+  }
+
+  @include phoneTiny {
+    width: auto;
+  }
+}
+
+.button {
+  border: 1px solid $brand;
+  color: white;
+  background-color: $brand;
+  font-size: 16px;
+  height: 42px;
+  padding: 0 32px;
+  transition: background-color 0.3s ease-in-out;
+
+  @include phoneTiny {
+    padding: 0 20px;
+  }
+
+  &:hover {
+    background-color: rgba($brand, 0.9);
+  }
+}
+
+.errorBox {
+  margin-top: 16px;
+  height: 20px;
+}
+
+.errorText {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #984447;
+}

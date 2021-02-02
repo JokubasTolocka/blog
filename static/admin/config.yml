@@ -29,7 +29,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        options: ["Technology", "News", "Sports"]
+        options: ["Technology", "Fashion", "Outdoors"]
 
       - label: "Featured Image"
         name: "thumbnail"
@@ -39,6 +39,16 @@ collections:
         name: "slug"
         widget: "string"
 
+      - label: "Meta Title"
+        name: "metaTitle"
+        widget: "string"
+        required: false
+
+      - label: "Meta Description"
+        name: "metaDescription"
+        widget: "text"
+        required: false
+
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -47,9 +57,9 @@ collections:
         name: "date"
         widget: "datetime"
 
-  - name: "news"
-    label: "News"
-    folder: "src/pages/news"
+  - name: "fashion"
+    label: "Fashion"
+    folder: "src/pages/fashion"
     create: true
     slug: "{{slug}}"
     identifier_field: slug
@@ -71,7 +81,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        options: ["Technology", "News", "Sports"]
+        options: ["Technology", "Fashion", "Outdoors"]
 
       - label: "Featured Image"
         name: "thumbnail"
@@ -81,6 +91,16 @@ collections:
         name: "slug"
         widget: "string"
 
+      - label: "Meta Title"
+        name: "metaTitle"
+        widget: "string"
+        required: false
+
+      - label: "Meta Description"
+        name: "metaDescription"
+        widget: "text"
+        required: false
+
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -89,9 +109,9 @@ collections:
         name: "date"
         widget: "datetime"
 
-  - name: "sports"
-    label: "Sports"
-    folder: "src/pages/sports"
+  - name: "outdoors"
+    label: "Outdoors"
+    folder: "src/pages/outdoors"
     create: true
     slug: "{{slug}}"
     identifier_field: slug
@@ -113,7 +133,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        options: ["Technology", "News", "Sports"]
+        options: ["Technology", "Fashion", "Outdoors"]
 
       - label: "Featured Image"
         name: "thumbnail"
@@ -122,6 +142,16 @@ collections:
       - label: "Slug"
         name: "slug"
         widget: "string"
+
+      - label: "Meta Title"
+        name: "metaTitle"
+        widget: "string"
+        required: false
+
+      - label: "Meta Description"
+        name: "metaDescription"
+        widget: "text"
+        required: false
 
       - label: "Body"
         name: "body"

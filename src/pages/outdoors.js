@@ -1,15 +1,18 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import ArticleBlock from "./ArticleBlock";
-import styles from "./TechnologySection.module.scss";
+import Layout from "../components/Layout";
+import Meta from "../components/Meta";
+import SVG1 from "../assets/news.svg";
+import SVG2 from "../assets/news2.svg";
+import Page from "../components/Page";
 
-const SportsSection = () => {
+const OutdoorsPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 3
-        filter: { frontmatter: { category: { eq: "Sports" } } }
+        limit: 1000
+        filter: { frontmatter: { category: { eq: "Outdoors" } } }
       ) {
         nodes {
           fields {
@@ -24,7 +27,7 @@ const SportsSection = () => {
               date(formatString: "MMM DD, YYYY")
               title
             }
-            excerpt(pruneLength: 140)
+            excerpt(pruneLength: 80)
           }
         }
       }
@@ -35,19 +38,19 @@ const SportsSection = () => {
   const paths = data.allMarkdownRemark.nodes;
 
   return (
-    <div className={styles.root}>
-      <h4 className={styles.title}>Sports</h4>
-      <div>
-        {articles.map((article, index) => (
-          <ArticleBlock
-            article={article}
-            key={index}
-            path={paths[index].fields.path}
-          />
-        ))}
-      </div>
-    </div>
+    <>
+      <Layout>
+        <Meta title="Outdoors" />
+        <Page
+          category="Outdoors"
+          articles={articles}
+          paths={paths}
+          SVG1={SVG1}
+          SVG2={SVG2}
+        />
+      </Layout>
+    </>
   );
 };
 
-export default SportsSection;
+export default OutdoorsPage;

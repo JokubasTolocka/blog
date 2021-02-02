@@ -4,11 +4,11 @@ export default [
     path: "/technology",
   },
   {
-    category: "News",
-    path: "/news",
+    category: "Fashion",
+    path: "/fashion",
   },
   {
-    category: "Sports",
-    path: "/sports",
+    category: "Outdoors",
+    path: "/outdoors",
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Meta from "../components/Meta";
 import SVG1 from "../assets/technology.svg";
 import SVG2 from "../assets/technology2.svg";
 import Page from "../components/Page";
@@ -39,6 +40,7 @@ const TechnologyPage = () => {
   return (
     <>
       <Layout>
+        <Meta title="Technology" />
         <Page
           category="Technology"
           articles={articles}
