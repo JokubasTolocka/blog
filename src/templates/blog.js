@@ -8,16 +8,16 @@ import ShareButtons from "../components/ShareBlock";
 import styles from "./blog.module.scss";
 
 export default function Template({ data }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html, wordCount } = markdownRemark;
+  // const { markdownRemark } = data;
+  // const { frontmatter, html, wordCount } = markdownRemark;
 
-  const timeToRead =
-    Math.floor(wordCount.words / Constants.AVG_READING_SPEED) || 1;
+  // const timeToRead =
+  //   Math.floor(wordCount.words / Constants.AVG_READING_SPEED) || 1;
 
-  const title = `Blog | ${frontmatter.title}`;
+  // const title = `Blog | ${frontmatter.title}`;
   return (
     <Layout>
-      <Meta title={title} description={null} />
+      {/* <Meta title={title} description={null} />
       <div className={styles.root}>
         <div className={styles.article}>
           <h1 className={styles.title}>{frontmatter.title}</h1>
@@ -44,24 +44,24 @@ export default function Template({ data }) {
           </div>
         </div>
       </div>
-      <ArticleFooter category={frontmatter.category} />
+      <ArticleFooter category={frontmatter.category} /> */}
     </Layout>
   );
 }
 
-export const pageQuery = graphql`
-  query MyQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        date(formatString: "MMM DD, YYYY")
-        title
-        category
-        thumbnail
-      }
-      wordCount {
-        words
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query MyQuery($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       html
+//       frontmatter {
+//         date(formatString: "MMM DD, YYYY")
+//         title
+//         category
+//         thumbnail
+//       }
+//       wordCount {
+//         words
+//       }
+//     }
+//   }
+// `;

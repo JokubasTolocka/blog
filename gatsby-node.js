@@ -5,22 +5,22 @@ const { createFilePath } = require("gatsby-source-filesystem");
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const result = await graphql(`
-    {
-      allMarkdownRemark {
-        nodes {
-          id
-          fields {
-            path
-            slug
-          }
-          frontmatter {
-            category
-          }
-        }
-      }
-    }
-  `);
+  // const result = await graphql(`
+  //   {
+  //     allMarkdownRemark {
+  //       nodes {
+  //         id
+  //         fields {
+  //           path
+  //           slug
+  //         }
+  //         frontmatter {
+  //           category
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   if (result.errors) {
     result.errors.forEach((error) => console.error(error.toString()));

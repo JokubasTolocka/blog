@@ -20,12 +20,12 @@ const IndexPage = () => {
         <div className={styles.content}>
           <TitleHeader />
         </div>
-        <NewArticles />
+        {/* <NewArticles /> */}
         <div className={styles.content}>
           <div className={styles.sections}>
-            <TechnologySection />
+            {/* <TechnologySection />
             <FashionSection />
-            <OutdoorsSection />
+            <OutdoorsSection /> */}
           </div>
         </div>
       </div>
