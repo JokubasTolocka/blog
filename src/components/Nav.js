@@ -9,14 +9,20 @@ const Nav = () => {
 
   return (
     <div className={styles.root}>
-      {isMenuOpen && <div className={styles.menu}>{/* <NavLinks /> */}</div>}
+      {isMenuOpen && (
+        <div className={styles.menu}>
+          <NavLinks />
+        </div>
+      )}
       <nav className={styles.nav}>
         <div className={styles.content}>
           <Link to="/" className={styles.logo}>
             Blog
           </Link>
           <div>
-            <div className={styles.links}>{/* <NavLinks /> */}</div>
+            <div className={styles.links}>
+              <NavLinks />
+            </div>
             <HamburgerButton
               active={isMenuOpen}
               setIsMenuOpen={() => setIsMenuOpen((prev) => !prev)}
