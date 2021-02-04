@@ -28,6 +28,9 @@ const TechnologyPage = () => {
               title
             }
             excerpt(pruneLength: 140)
+            wordCount {
+              words
+            }
           }
         }
       }

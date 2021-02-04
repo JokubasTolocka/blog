@@ -25,6 +25,9 @@ const FashionSection = () => {
               title
             }
             excerpt(pruneLength: 140)
+            wordCount {
+              words
+            }
           }
         }
       }

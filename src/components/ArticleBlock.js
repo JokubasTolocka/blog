@@ -1,10 +1,14 @@
 import React from "react";
 import Link from "./Link";
+import Constants from "../constants/index";
 import styles from "./ArticleBlock.module.scss";
 
 const ArticleBlock = ({ article, path }) => {
   const shortDescription = article.node.excerpt;
   const articleDetails = article.node.frontmatter;
+
+  const timeToRead =
+    Math.floor(article.node.wordCount.words / Constants.AVG_READING_SPEED) || 1;
 
   return (
     <Link to={path} className={styles.link}>
@@ -18,7 +22,12 @@ const ArticleBlock = ({ article, path }) => {
             <span className={styles.categoryName}>
               {articleDetails.category}
             </span>
-            <span className={styles.category}>{articleDetails.date}</span>
+            <div className={styles.dateTimeBlock}>
+              <span className={styles.time}>
+                {timeToRead} min read<span className={styles.dot}>·</span>
+              </span>
+              <span>{articleDetails.date}</span>
+            </div>
           </div>
         </div>
         <img

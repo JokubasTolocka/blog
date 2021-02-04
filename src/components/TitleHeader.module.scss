@@ -45,6 +45,7 @@
   font-family: $fontBrand;
   font-weight: 400;
   margin-bottom: 44px;
+  opacity: 0.8;
 
   @include phone {
     font-size: 18px;

@@ -2,17 +2,17 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Meta from "../components/Meta";
-import SVG1 from "../assets/sports.svg";
-import SVG2 from "../assets/sports2.svg";
+import SVG1 from "../assets/fashion.svg";
+import SVG2 from "../assets/fashion2.svg";
 import Page from "../components/Page";
 
-const OutdoorsPage = () => {
+const FashionPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
-        filter: { frontmatter: { category: { eq: "Outdoors" } } }
+        filter: { frontmatter: { category: { eq: "Fashion" } } }
       ) {
         nodes {
           fields {
@@ -43,9 +43,9 @@ const OutdoorsPage = () => {
   return (
     <>
       <Layout>
-        <Meta title="Outdoors" />
+        <Meta title="Fashion" />
         <Page
-          category="Outdoors"
+          category="Fashion"
           articles={articles}
           paths={paths}
           SVG1={SVG1}
@@ -56,4 +56,4 @@ const OutdoorsPage = () => {
   );
 };
 
-export default OutdoorsPage;
+export default FashionPage;

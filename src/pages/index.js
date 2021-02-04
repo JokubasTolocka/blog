@@ -15,7 +15,7 @@ import OutdoorsSection from "../components/OutdoorsSection";
 const IndexPage = () => {
   return (
     <Layout>
-      <Meta title="Blog" />
+      <Meta />
       <div className={styles.root}>
         <div className={styles.content}>
           <TitleHeader />

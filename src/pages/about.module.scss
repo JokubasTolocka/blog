@@ -1,0 +1,92 @@
+@import "../base.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 18px 0 18px;
+}
+
+.content {
+  max-width: 1192px;
+  margin: 0 18px;
+  width: 100%;
+}
+
+.title {
+  font-family: $fontBrand;
+  color: $brand;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 32px;
+
+  @include phone {
+    font-size: 32px;
+  }
+}
+
+.text {
+  color: $brand;
+  font-size: 20px;
+  text-align: justify;
+
+  @include phone {
+    font-size: 16px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 64px;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.svg {
+  width: 400px;
+  height: 450px;
+  margin-left: auto;
+
+  @include phone {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.line {
+  background-color: $grey;
+  height: 1px;
+}
+
+.emphasis {
+  font-family: $fontBrand;
+  font-size: 22px;
+  color: $brand;
+  font-weight: 400;
+
+  @include phone {
+    font-size: 18px;
+  }
+}
+
+.sectionTitle {
+  font-family: $fontBrand;
+  font-size: 22px;
+  color: $brand;
+  font-weight: 400;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.email {
+  color: $brand;
+  font-family: $fontBrand;
+  font-size: 18px;
+}

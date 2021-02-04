@@ -25,6 +25,9 @@ const OutdoorsSection = () => {
               title
             }
             excerpt(pruneLength: 140)
+            wordCount {
+              words
+            }
           }
         }
       }

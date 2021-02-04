@@ -29,7 +29,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   font-weight: 700;
 
@@ -45,6 +45,10 @@
 .image {
   object-fit: cover;
   width: 200px;
+
+  @include phoneTiny {
+    width: 150px;
+  }
 }
 
 .postInformation {
@@ -61,6 +65,22 @@
 
 .categoryName {
   color: $complementary;
+}
+
+.time {
+  display: block;
+
+  @include phoneTiny {
+    display: none;
+  }
+}
+
+.dateTimeBlock {
+  display: flex;
+}
+
+.dot {
+  margin: 0 7px;
 }
 
 .description {

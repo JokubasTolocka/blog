@@ -27,8 +27,8 @@ const Meta = ({ description, meta, title }) => {
         lang: LANG,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      defaultTitle={site.siteMetadata.siteName}
+      titleTemplate={`%s | Blog`}
+      defaultTitle="Blog"
       meta={[
         {
           name: "description",

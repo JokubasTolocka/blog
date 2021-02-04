@@ -25,6 +25,9 @@ const TechnologySection = () => {
               title
             }
             excerpt(pruneLength: 140)
+            wordCount {
+              words
+            }
           }
         }
       }
