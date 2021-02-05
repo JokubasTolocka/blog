@@ -3,12 +3,12 @@
 .link {
   padding: 8px 0;
   margin: 0 16px;
-  color: $brand;
-  font-family: $fontBrand;
   font-size: 16px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease-in-out;
+
+  @include brandFont;
 
   &:hover {
     border-bottom: 1px solid $brand;

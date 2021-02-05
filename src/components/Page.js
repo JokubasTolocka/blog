@@ -12,6 +12,7 @@ const Page = ({ articles, category, paths, SVG1, SVG2 }) => (
         </div>
         <SVG2 className={styles.svg2} />
       </div>
+      <div className={styles.line}></div>
       {articles.map((article, index) => (
         <ArticleBlock
           article={article}

@@ -8,27 +8,26 @@ import Meta from "../components/Meta";
 import TitleHeader from "../components/TitleHeader";
 import NewArticles from "../components/NewArticlesTitle";
 import TechnologySection from "../components/TechnologySection";
-import styles from "./index.module.scss";
 import FashionSection from "../components/FashionSection";
 import OutdoorsSection from "../components/OutdoorsSection";
+import ContentWrapper from "../components/ContentWrapper";
+import styles from "./index.module.scss";
 
 const IndexPage = () => {
   return (
     <Layout>
       <Meta />
-      <div className={styles.root}>
-        <div className={styles.content}>
-          <TitleHeader />
+      <ContentWrapper>
+        <TitleHeader />
+      </ContentWrapper>
+      <NewArticles />
+      <ContentWrapper>
+        <div className={styles.sections}>
+          <TechnologySection />
+          <FashionSection />
+          <OutdoorsSection />
         </div>
-        <NewArticles />
-        <div className={styles.content}>
-          <div className={styles.sections}>
-            <TechnologySection />
-            <FashionSection />
-            <OutdoorsSection />
-          </div>
-        </div>
-      </div>
+      </ContentWrapper>
     </Layout>
   );
 };

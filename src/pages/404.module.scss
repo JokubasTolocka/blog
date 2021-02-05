@@ -9,19 +9,19 @@
 }
 
 .title {
-  font-family: $fontBrand;
-  color: $brand;
   font-size: 40px;
   margin: 0;
+
+  @include brandFont;
 }
 
 .text {
   margin-top: 24px;
   font-weight: 400;
-  font-family: $fontBrand;
-  color: $brand;
   font-size: 16px;
   text-align: center;
+
+  @include brandFont;
 }
 
 .link {

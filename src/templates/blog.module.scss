@@ -17,10 +17,10 @@
 
 .title {
   font-size: 46px;
-  font-family: $fontBrand;
-  color: $brand;
   font-weight: 400;
   margin-bottom: 16px;
+
+  @include brandFont;
 
   @include phone {
     font-size: 32px;
@@ -92,4 +92,12 @@
   a {
     color: $brand;
   }
+}
+
+.line {
+  height: 1px;
+  background-color: $brand;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 48px;
 }

@@ -38,7 +38,7 @@ const FashionSection = () => {
   const paths = data.allMarkdownRemark.nodes;
 
   return (
-    <div className={styles.root}>
+    <div>
       <h4 className={styles.title}>Fashion</h4>
       <div>
         {articles.map((article, index) => (

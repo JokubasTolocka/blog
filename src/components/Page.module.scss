@@ -15,7 +15,7 @@
 .header {
   display: flex;
   width: 100%;
-  margin: 24px 0 48px 0;
+  margin: 24px 0 32px 0;
 
   @include phone {
     margin: 16px 0 24px 0;
@@ -23,10 +23,11 @@
 }
 
 .headerText {
-  color: $brand;
-  font-family: $fontBrand;
   font-size: 65px;
+  font-weight: 400;
   margin: 0;
+
+  @include brandFont;
 
   @include phone {
     font-size: 32px;
@@ -50,4 +51,10 @@
   @include phone {
     display: none;
   }
+}
+
+.line {
+  height: 1px;
+  background-color: $brand;
+  margin-bottom: 40px;
 }

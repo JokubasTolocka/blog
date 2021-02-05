@@ -20,6 +20,11 @@ export default function Template({ data }) {
       <Meta title={title} description={null} />
       <div className={styles.root}>
         <div className={styles.article}>
+          <img
+            className={styles.thumbnail}
+            src={frontmatter.thumbnail}
+            alt={frontmatter.title}
+          />
           <h1 className={styles.title}>{frontmatter.title}</h1>
           <div className={styles.details}>
             <span className={styles.category}>{frontmatter.category}</span>
@@ -29,11 +34,7 @@ export default function Template({ data }) {
               <ShareButtons frontmatter={frontmatter} />
             </span>
           </div>
-          <img
-            className={styles.thumbnail}
-            src={frontmatter.thumbnail}
-            alt={frontmatter.title}
-          />
+          <div className={styles.line}></div>
           <div
             className={styles.postContent}
             dangerouslySetInnerHTML={{ __html: html }}

@@ -38,7 +38,7 @@ const TechnologySection = () => {
   const paths = data.allMarkdownRemark.nodes;
 
   return (
-    <div className={styles.root}>
+    <div>
       <h4 className={styles.title}>Technology</h4>
       <div>
         {articles.map((article, index) => (

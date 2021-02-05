@@ -2,7 +2,7 @@
 
 .root {
   border-top: 1px solid $brand;
-  background-color: $grey;
+  background-color: rgb(225, 235, 243);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -51,6 +51,6 @@
 .newTitle {
   font-size: 24px;
   margin-bottom: 24px;
-  font-family: $fontBrand;
-  color: $brand;
+
+  @include brandFont;
 }

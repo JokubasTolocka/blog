@@ -29,12 +29,11 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   font-weight: 700;
 
   @include phone {
-    font-size: 18px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -85,6 +84,7 @@
 
 .description {
   margin-top: 8px;
+  font-size: 16px;
   margin-bottom: 0;
   overflow: hidden;
   display: -webkit-box;
