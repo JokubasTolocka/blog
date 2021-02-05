@@ -27,13 +27,11 @@ Apple has outdone itself with the four iPhone 12 models launched in late last ye
 
 We also really like the flatter design that Apple has introduced for the iPhones this year. Add to that the choice of cool colours – white, black, blue, green and red – and it's a really impressive overall package. Unless you have a real affinity for Android, this could well be the smartphone for you.
 
-<a href="/" className="buyButton">Buy Now</a>
+<a href="/" class="buyButton">Buy Now</a>
 
 ### 2. OnePlus 8 Pro
 
 ![](https://cdn.mos.cms.futurecdn.net/GshBbgyzfXcuyzB2ySDV7W-768-80.jpg.webp)
-
-
 
 OnePlus' ascension to the top smartphone table is complete with the OnePlus 8 Pro, which is a simply jaw-dropping handset that delivers across the board. It is, simply put, the best phone on the market for those shopping for a premium Android handset.
 
@@ -43,7 +41,7 @@ There are so many reasons why the OnePlus 8 Pro is so special, but first among t
 
 The OnePlus 8 Pro also comes with a simply rapid suite of top-shelf internal hardware, next-gen 5G connectivity and a selection of advanced phone features like reverse wireless charging and IP68 water and dust proofing. Naturally, as this is a phone from OnePlus, the design and ergonomics are also fantastic.
 
-<a href="/" className="buyButton">Buy Now</a>
+<a href="/" class="buyButton">Buy Now</a>
 
 Choosing the right phone is no easy task, as there are so many on the market and, truth be told, many of them are *very* similar. There are some core questions you should ask yourself before pulling the trigger on a smartphone upgrade, though.
 
