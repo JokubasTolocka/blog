@@ -17,7 +17,7 @@ const Nav = () => {
       <nav className={styles.nav}>
         <div className={styles.content}>
           <Link to="/" className={styles.logo}>
-            Blog
+            Daydian
           </Link>
           <div>
             <div className={styles.links}>

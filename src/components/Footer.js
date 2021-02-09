@@ -6,7 +6,7 @@ const Footer = () => (
   <div className={styles.root}>
     <div className={styles.content}>
       <Link to="/" className={styles.logo}>
-        Blog
+        Daydian
       </Link>
       <div>
         <Link to="/about" className={styles.link}>

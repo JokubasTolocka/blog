@@ -19,7 +19,9 @@ const Meta = ({ description, meta, title }) => {
     `
   );
 
-  description = description || site.siteMetadata.description;
+  description =
+    "Read inspiring arcticles which help you make the best decisions." ||
+    site.siteMetadata.description;
 
   return (
     <Helmet
@@ -27,8 +29,8 @@ const Meta = ({ description, meta, title }) => {
         lang: LANG,
       }}
       title={title}
-      titleTemplate={`%s | Blog`}
-      defaultTitle="Blog"
+      titleTemplate={`%s | Daydian`}
+      defaultTitle="Daydian"
       meta={[
         {
           name: "description",

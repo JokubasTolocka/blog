@@ -14,7 +14,7 @@ const About = () => {
         <div className={styles.grid}>
           <div>
             <h3 className={styles.sectionTitle}>
-              Welcome to <span className={styles.emphasis}>Blog</span>
+              Welcome to <span className={styles.emphasis}>Daydian</span>
             </h3>
             <div className={styles.section}>
               <div className={styles.line}></div>
