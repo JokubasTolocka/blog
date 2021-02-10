@@ -1,12 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <title>Content Manager</title>
-</head>
-<body>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      CMS.registerEditorComponent({
+        id: "button",
+        // Visible label
+        label: "Buy button",
+        // Fields the user need to fill out when adding an instance of the component
+        fields: [
+          { name: "href", label: "Hyperlink button title", widget: "string" },
+        ],
+        // Pattern to identify a block as being an instance of this component
+        pattern: /^button (\S+)$/,
+        // Function to extract data elements from the regexp match
+        fromBlock: function (match) {
+          return {
+            id: match[1],
+          };
+        },
+        // Function to create a text block from an instance of this component
+        toBlock: function (obj) {
+          return "link to " + obj.id;
+        },
+        toPreview: function (obj) {
+          return '<a href="' + obj.href + '" class="buyButton"/>';
+        },
+      });
+    </script>
+  </body>
 </html>
