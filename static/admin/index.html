@@ -15,7 +15,8 @@
         label: "Buy button",
         // Fields the user need to fill out when adding an instance of the component
         fields: [
-          { name: "href", label: "Hyperlink button title", widget: "string" },
+          { name: "href", label: "Link", widget: "string" },
+          { name: "text", label: "Text", widget: "string" },
         ],
         // Pattern to identify a block as being an instance of this component
         pattern: /^button (\S+)$/,
@@ -27,10 +28,14 @@
         },
         // Function to create a text block from an instance of this component
         toBlock: function (obj) {
-          return "link to " + obj.id;
+          return "link to " + obj.href;
         },
         toPreview: function (obj) {
-          return '<a href="' + obj.href + '" class="buyButton"/>';
+          return (
+            <a href={obj.href} class="buyButton">
+              {obj.text}
+            </a>
+          );
         },
       });
     </script>
