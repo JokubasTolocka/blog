@@ -1,0 +1,9 @@
+.postContentCSS a.buyButton {
+  text-decoration: none;
+  background-color: rgba(21, 209, 106, 0.4);
+  border-top: 1px solid rgb(21, 209, 106);
+  border-bottom: 1px solid rgb(21, 209, 106);
+  padding: 8px 16px;
+
+  width: 100%;
+}

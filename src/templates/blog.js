@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Constants from "../constants";
@@ -6,6 +7,7 @@ import Meta from "../components/Meta";
 import ArticleFooter from "../components/ArticleFooter";
 import ShareButtons from "../components/ShareBlock";
 import styles from "./blog.module.scss";
+import "./blog.css";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -36,7 +38,7 @@ export default function Template({ data }) {
           </div>
           <div className={styles.line}></div>
           <div
-            className={styles.postContent}
+            className={classnames(styles.postContent, "postContentCSS")}
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <div className={styles.footer}>

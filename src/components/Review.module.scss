@@ -1,0 +1,18 @@
+@import "../base.scss";
+
+.root {
+  font-size: 18px;
+  border-bottom: 1px solid $grey;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.author {
+  opacity: 0.6;
+  margin: 4px 0 0 0;
+  text-align: end;
+}

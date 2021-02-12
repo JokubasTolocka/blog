@@ -10,6 +10,7 @@ import NewArticles from "../components/NewArticlesTitle";
 import TechnologySection from "../components/TechnologySection";
 import FashionSection from "../components/FashionSection";
 import OutdoorsSection from "../components/OutdoorsSection";
+import ReviewsSection from "../components/ReviewsSection";
 import ContentWrapper from "../components/ContentWrapper";
 import styles from "./index.module.scss";
 
@@ -26,6 +27,7 @@ const IndexPage = () => {
           <TechnologySection />
           <FashionSection />
           <OutdoorsSection />
+          <ReviewsSection />
         </div>
       </ContentWrapper>
     </Layout>
