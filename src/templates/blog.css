@@ -4,6 +4,6 @@
   border-top: 1px solid rgb(21, 209, 106);
   border-bottom: 1px solid rgb(21, 209, 106);
   padding: 8px 16px;
-
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
