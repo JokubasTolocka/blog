@@ -24,13 +24,17 @@ const About = () => {
                 their day-to-day basis.
               </p>
               <p className={styles.text}>
+                We put careful research into products that we recommend to make
+                sure that the readers feel that our content is tailored to them.
+              </p>
+              <p className={styles.text}>
                 We constantly aim to improve our process of researching and
                 picking the right content for the readers to make it worth their
                 time because there is nothing more valuable to us than{" "}
                 <span className={styles.emphasis}>You</span>.
               </p>
             </div>
-            <h3 className={styles.sectionTitle}>Contact</h3>
+            {/* <h3 className={styles.sectionTitle}>Contact</h3>
             <div className={styles.section}>
               <div className={styles.line}></div>
               <p className={styles.text}>
@@ -38,7 +42,7 @@ const About = () => {
                 doing!
               </p>
               <li className={styles.email}>@email.com</li>
-            </div>
+            </div> */}
           </div>
           <SVG className={styles.svg} />
         </div>
