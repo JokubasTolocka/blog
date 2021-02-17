@@ -53,7 +53,6 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-        buttons: ["bold", "italic", "link"]
 
       - label: "Publish Date"
         name: "date"
