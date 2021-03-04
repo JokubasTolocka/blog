@@ -7,7 +7,7 @@ import styles from "./404.module.scss";
 const NotFoundPage = () => {
   return (
     <Layout>
-      <Meta title="Blog" />
+      <Meta title="Daydian" />
       <div className={styles.root}>
         <h1 className={styles.title}>Page not found</h1>
         <h4 className={styles.text}>

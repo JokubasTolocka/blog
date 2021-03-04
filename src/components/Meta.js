@@ -24,12 +24,13 @@ const Meta = ({ description, meta, title }) => {
     "Read inspiring articles which help you make the best decisions." ||
     site.siteMetadata.description;
 
+  const siteTitle = title || "Daydian";
   return (
     <Helmet
       htmlAttributes={{
         lang: LANG,
       }}
-      title={title}
+      title={siteTitle}
       titleTemplate={`%s | Daydian`}
       defaultTitle="Daydian"
       meta={[
@@ -43,7 +44,7 @@ const Meta = ({ description, meta, title }) => {
         },
         {
           property: "og:title",
-          content: title,
+          content: siteTitle,
         },
         {
           property: "og:description",
@@ -55,7 +56,7 @@ const Meta = ({ description, meta, title }) => {
         },
         {
           name: "twitter:title",
-          content: title,
+          content: siteTitle,
         },
         {
           name: "twitter:description",
