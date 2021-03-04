@@ -83,11 +83,11 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
         { property: `og:image`, content: ogImageUrl },
         {
           property: `twitter:card`,
-          content: imageUrl ? `summary_large_image` : `summary`,
+          content: `summary_large_image`,
         },
         {
           property: `twitter:image:alt`,
-          content: imageAlt || "davidagood.com logo",
+          content: imageAlt || "Daydian",
         },
       ].concat(meta)}
     />
