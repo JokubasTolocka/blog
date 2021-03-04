@@ -16,7 +16,7 @@ export default function Template({ data }) {
   const timeToRead =
     Math.floor(wordCount.words / Constants.AVG_READING_SPEED) || 1;
 
-  const title = `Daydian | ${frontmatter.title}`;
+  const title = `${frontmatter.title} | Daydian`;
   return (
     <Layout>
       <Meta
