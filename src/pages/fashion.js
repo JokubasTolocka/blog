@@ -43,7 +43,7 @@ const FashionPage = () => {
   return (
     <>
       <Layout>
-        <Meta title="Fashion" />
+        <Meta title="Fashion | Daydian" />
         <Page
           category="Fashion"
           articles={articles}

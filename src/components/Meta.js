@@ -48,7 +48,7 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
       htmlAttributes={{
         lang: LANG,
       }}
-      title={title}
+      title={siteTitle}
       titleTemplate={`%s`}
       defaultTitle="Daydian"
       meta={[

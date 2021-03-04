@@ -43,7 +43,7 @@ const TechnologyPage = () => {
   return (
     <>
       <Layout>
-        <Meta title="Technology" />
+        <Meta title="Technology | Daydian" />
         <Page
           category="Technology"
           articles={articles}

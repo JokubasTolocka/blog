@@ -8,7 +8,7 @@ import styles from "./about.module.scss";
 const About = () => {
   return (
     <Layout>
-      <Meta title="About" />
+      <Meta title="About | Daydian" />
       <ContentWrapper>
         <h3 className={styles.title}>About us</h3>
         <div className={styles.grid}>
