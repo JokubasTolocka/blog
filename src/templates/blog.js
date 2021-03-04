@@ -19,7 +19,12 @@ export default function Template({ data }) {
   const title = `Daydian | ${frontmatter.title}`;
   return (
     <Layout>
-      <Meta title={title} description={null} />
+      <Meta
+        title={title}
+        description={frontmatter.metaDescription}
+        imageUrl={frontmatter.thumbnail}
+        imageAlt={data.markdownRemark.frontmatter.imageAlt}
+      />
       <div className={styles.root}>
         <div className={styles.article}>
           <img
@@ -61,6 +66,7 @@ export const pageQuery = graphql`
         title
         category
         thumbnail
+        metaDescription
       }
       wordCount {
         words

@@ -5,14 +5,24 @@ import { useStaticQuery, graphql } from "gatsby";
 
 const LANG = "en";
 
-const Meta = ({ description, meta, title }) => {
-  const { site } = useStaticQuery(
+const constructUrl = (baseUrl, path) =>
+  !baseUrl || !path ? null : `${baseUrl}${path}`;
+
+const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
+  const { site, ogImageDefault } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
+          }
+        }
+        ogImageDefault: file(relativePath: { eq: "headerImage.png" }) {
+          childImageSharp {
+            fixed {
+              src
+            }
           }
         }
       }
@@ -25,6 +35,14 @@ const Meta = ({ description, meta, title }) => {
     site.siteMetadata.description;
 
   const siteTitle = title || "Daydian";
+
+  const defaultImageUrl = constructUrl(
+    "https://daydian.com",
+    ogImageDefault?.childImageSharp?.fixed?.src
+  );
+
+  const ogImageUrl = imageUrl || defaultImageUrl;
+
   return (
     <Helmet
       htmlAttributes={{
@@ -61,6 +79,15 @@ const Meta = ({ description, meta, title }) => {
         {
           name: "twitter:description",
           content: description,
+        },
+        { property: `og:image`, content: ogImageUrl },
+        {
+          property: `twitter:card`,
+          content: imageUrl ? `summary_large_image` : `summary`,
+        },
+        {
+          property: `twitter:image:alt`,
+          content: imageAlt || "davidagood.com logo",
         },
       ].concat(meta)}
     />
