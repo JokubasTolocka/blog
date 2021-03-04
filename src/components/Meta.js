@@ -34,8 +34,6 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
     "Read inspiring articles which help you make the best decisions." ||
     site.siteMetadata.description;
 
-  const siteTitle = title || "Daydian";
-
   const defaultImageUrl = constructUrl(
     "https://daydian.com",
     ogImageDefault?.childImageSharp?.fixed?.src
@@ -48,7 +46,7 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
       htmlAttributes={{
         lang: LANG,
       }}
-      title={siteTitle}
+      title={title}
       titleTemplate={`%s | Daydian`}
       defaultTitle="Daydian"
       meta={[
