@@ -17,7 +17,7 @@ import styles from "./index.module.scss";
 const IndexPage = () => {
   return (
     <Layout>
-      <Meta />
+      <Meta description="<b>Daydian</b> focuses on bringing value to your every day life through inspiring articles which help you make the best decisions" />
       <ContentWrapper>
         <TitleHeader />
       </ContentWrapper>
