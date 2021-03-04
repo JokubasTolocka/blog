@@ -20,6 +20,7 @@ const Meta = ({ description, meta, title }) => {
   );
 
   description =
+    description ||
     "Read inspiring articles which help you make the best decisions." ||
     site.siteMetadata.description;
 
