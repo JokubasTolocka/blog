@@ -60,7 +60,7 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
         },
         {
           property: "og:title",
-          content: siteTitle,
+          content: title,
         },
         {
           property: "og:description",
@@ -72,7 +72,7 @@ const Meta = ({ description, meta, title, imageUrl, imageAlt }) => {
         },
         {
           name: "twitter:title",
-          content: siteTitle,
+          content: title,
         },
         {
           name: "twitter:description",
