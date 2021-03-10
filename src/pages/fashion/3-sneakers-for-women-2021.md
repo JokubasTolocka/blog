@@ -23,7 +23,7 @@ Whether you prefer sporty cool kicks, retro-inspired trainers, chunky platforms 
 
 So you're in love with the classic look of '80s basketball, but you've got a thing for the fast-paced culture of today's game. Meet the new Nike Court Vision Low. Its crisp upper and stitched overlays are inspired by the hook shot of old-school basketball while its super-plush, low-cut collar adds a sleek look that's comfortable day in and day out. Get yours at Nike.
 
-<a href="<https://www.nike.com/gb/t/court-vision-low-shoe-VWzQ1T/CD5463-001>" class="buyButton">Buy Now</a>
+<a href="https://www.nike.com/gb/t/court-vision-low-shoe-VWzQ1T/CD5463-001" class="buyButton">Buy Now</a>
 
 ### 2. The Forever Sneaker
 
@@ -31,7 +31,7 @@ So you're in love with the classic look of '80s basketball, but you've got a thi
 
 Reduce your carbon footprint, increase your style game. Everlane's no-frills (thus, goes-with-everything) sneakers feature earth-friendly components such as partially recycled canvas and natural rubber outsoles. They are also fully machine-washable so you can keep them in mint condition. If its life cycle should come to an end, the brand will even help you recycle them. Get yours at Everlane.
 
-<a href="[](https://www.nike.com/gb/t/court-vision-low-shoe-VWzQ1T/CD5463-001)<https://www.everlane.com/products/womens-forever-sneaker-white?utm_source=pepperjam&utm_medium=2-112671&utm_campaign=120661&clickId=3489694859>" class="buyButton">Buy Now</a>
+<a href="https://www.everlane.com/products/womens-forever-sneaker-white?utm_source=pepperjam&utm_medium=2-112671&utm_campaign=120661&clickId=3489694859" class="buyButton">Buy Now</a>
 
 ### 3. Women's Stan Smith
 
@@ -39,4 +39,4 @@ Reduce your carbon footprint, increase your style game. Everlane's no-frills (th
 
 A beloved classic for a reason: this leather tennis sneaker may have originated on the court but it earned its style stripes on the street. Get yours at Amazon.
 
-<a href="[](https://www.nike.com/gb/t/court-vision-low-shoe-VWzQ1T/CD5463-001)[https://www.amazon.co.uk/dp/B00R6BWL30?ots=1&ascsubtag=[artid|10072.g.27244181[src|[ch|[lt|sale&linkCode=gs2&tag=hearstmagazin-21](https://www.amazon.co.uk/dp/B00R6BWL30?ots=1&ascsubtag=[artid|10072.g.27244181[src|[ch|[lt|sale&linkCode=gs2&tag=hearstmagazin-21)[](https://www.everlane.com/products/womens-forever-sneaker-white?utm_source=pepperjam&utm_medium=2-112671&utm_campaign=120661&clickId=3489694859)" class="buyButton">Buy Now</a>
+<a target="_blank" href="https://www.amazon.com/gp/product/B00VSAV2TY/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00VSAV2TY&linkCode=as2&tag=daydian-20&linkId=4504926bdc0947d87f4070f4ca2c7cb3" class="buyButton">Buy Now</a>
