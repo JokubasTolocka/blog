@@ -19,7 +19,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="shortcut icon" href="./images/favicon.png"></link>
+        <link
+          rel="shortcut icon"
+          href="/favicon-32x32.png?v=af6de3c286f75c4be0461ab65da0cd74"
+        ></link>
         {ads && ads}
         {props.headComponents}
       </head>
