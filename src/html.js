@@ -34,10 +34,10 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script
+        {/* <script
           type="text/javascript"
           src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2c81f138fedc690c95f431fe1cc7ee84faad5f35"
-        ></script>
+        ></script> */}
       </body>
     </html>
   );
