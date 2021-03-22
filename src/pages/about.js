@@ -34,15 +34,15 @@ const About = () => {
                 <span className={styles.emphasis}>You</span>.
               </p>
             </div>
-            {/* <h3 className={styles.sectionTitle}>Contact</h3>
+            <h3 className={styles.sectionTitle}>Contact</h3>
             <div className={styles.section}>
               <div className={styles.line}></div>
               <p className={styles.text}>
                 We love connecting with our readers. Let us know how we're
                 doing!
               </p>
-              <li className={styles.email}>@email.com</li>
-            </div> */}
+              <li className={styles.email}>daydian.business@gmail.com</li>
+            </div>
           </div>
           <SVG className={styles.svg} />
         </div>
