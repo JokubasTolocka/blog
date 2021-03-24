@@ -43,7 +43,7 @@ RemoBell S is basically a smart bell button. It is very easy to set up, supports
 
 This small device provides full house monitoring from your phone, PC or the 7-inch tablet itself. The additional components come at a price, but the perk is that Vivint technicians come and set everything up themselves. After that, you don't need to lift a finger. Get yours at Vivint.
 
-<a target="_blank" href="https://www.vivint.com/affiliates/pcmag?lp_request_id=5ebee950508ef&s5=&exid=165559&s1=&s2=&s3=&s4=&ckm_subid_2=02sDj5Kx0AqcY4mX8SLgfhq" class="buyButton">Buy Now</a>
+<a target="_blank" href="https://www.awin1.com/cread.php?s=2800454&v=21822&q=405051&r=849555" class="buyButton">Buy Now</a>
 
 ### 5. Yeelight Smart LED Bulb
 
